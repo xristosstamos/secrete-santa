@@ -11,7 +11,18 @@ document.getElementById("button2").onclick = function(){
 document.getElementById("button1").onclick = function(){
     let name = document.getElementById("names").value
     names.push(name);
-    //console.log(names);
+    console.log(names);
     document.getElementById("names").value = null;
+}
+
+document.getElementById("shuffle").onclick = function(){
+let i = names.length, j, temp;
+while(--i > 0){
+    j = Math.floor(Math.random()*(i+1));
+    temp = names[j];
+    names[j] = names[i];
+    names[i] = temp;
+}
+//console.log(names);
 }
 

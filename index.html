@@ -8,17 +8,25 @@
     <title>Secret Santa</title>
 </head>
 <body>
-<div class="boxes">
-   <div class="name-box">
+<div class="box-wrapper">
+   <div class="boxes">
     <label for="names">Enter names:</label><br>
-    <input type="text" name="names" id="names">
-    <button type="button" id="button1">submit</button><br>
+    <div>
+      <input type ="text" name="names" id="names">
+      <button type="button" id="button1">submit</button><br>
   </div>
-  <div class="mail-box">
+  </div>
+  <div class="boxes">
     <label for="emails">Enter emails:</label><br>
-    <input type="text" name="emails" id="emails">
+
+      <div>
+        <input type="text" name="emails" id="emails">
     <button type="button" id="button2">submit</button>
   </div>
+  </div>
+</div>
+<div class="shuffle">
+  <button type="button" id="shuffle">gifts time</button>
 </div>
 <script src="script.js"></script>
 </body>
