@@ -12,6 +12,12 @@ body {
     justify-content: center;
 }
 
+.text {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
 .boxes {
     flex-direction: column;
     margin: 8px;
@@ -55,4 +61,41 @@ body {
     justify-content: center;
     align-items: center;
 
+}
+
+.santa {
+    margin: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.list-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+li.list-item {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+li.list-item {
+    text-decoration: underline;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
